@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103b37">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Free Diamond Shape Ratio Calculator by Laxmi Jewellers Dubai. Calculate a diamond's length-to-width ratio, compare two stones, and preview outline proportions across nine shapes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diamond Shape Ratio Calculator | Laxmi Jewellers Dubai">
+  <meta property="og:description" content="Understand the shape behind the numbers. A free, privacy-friendly diamond length-to-width ratio calculator with live outlines and side-by-side comparison.">
+  <title>Diamond Shape Ratio Calculator | Laxmi Jewellers Dubai</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#calculator">Skip to calculator</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="Laxmi Jewellers — back to top">
+      <span class="brand-symbol" aria-hidden="true">
+        <svg viewBox="0 0 38 38" fill="none"><path d="M19 3 33 16 19 35 5 16 19 3Z" stroke="currentColor" stroke-width="1.6"/><path d="M5 16h28M19 3l-6 13 6 19 6-19L19 3Z" stroke="currentColor" stroke-width="1.2"/></svg>
+      </span>
+      <span class="brand-copy"><span class="brand-name">LAXMI <span>JEWELLERS</span></span><span class="brand-location">DUBAI · EDUCATION STUDIO</span></span>
+    </a>
+    <nav aria-label="Main navigation" class="main-nav">
+      <a href="#calculator">Calculator</a>
+      <a href="#guide">Shape guide</a>
+      <a class="nav-link-external" href="https://laxmijewellers.ae/" target="_blank" rel="noopener noreferrer">Official website <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> FREE JEWELLERY EDUCATION TOOL <span class="eyebrow-dot">✦</span></div>
+      <h1 id="hero-title">Understand the <em>shape</em> behind the sparkle.</h1>
+      <p class="hero-lede">Explore a diamond's length-to-width ratio in seconds. See proportions take shape, and compare two stones before making a decision.</p>
+      <div class="hero-actions">
+        <a class="button button-gold" href="#calculator">Try the calculator <span aria-hidden="true">↗</span></a>
+        <span class="privacy-note"><span class="green-dot" aria-hidden="true"></span> No account. No uploads. No tracking.</span>
+      </div>
+      <div class="hero-tidbits"><span><strong>09</strong> diamond outlines</span><span class="tidbit-divider"></span><span><strong>01</strong> clear formula</span><span class="tidbit-divider"></span><span><strong>∞</strong> possibilities</span></div>
+    </div>
+    <div class="hero-illustration" aria-hidden="true">
+      <div class="hero-circle hero-circle-one"></div><div class="hero-circle hero-circle-two"></div>
+      <svg class="hero-gem" viewBox="0 0 380 380" role="presentation">
+        <defs><linearGradient id="hero-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7e9c6" stop-opacity=".8"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".3"/><stop offset="1" stop-color="#a7c2b9" stop-opacity=".45"/></linearGradient></defs>
+        <ellipse cx="190" cy="190" rx="108" ry="158" fill="url(#hero-fill)" stroke="#dbbb80" stroke-width="2"/>
+        <path d="M190 32 142 91 82 190l108 158 108-158-60-99-48-59ZM82 190h216M142 91l48 99 48-99M142 91l-13 99 61 158 61-158-13-99M190 32v316" fill="none" stroke="#c9aa75" stroke-width="1.5" stroke-opacity=".72"/>
+        <circle cx="190" cy="190" r="28" fill="#fff" fill-opacity=".24" stroke="#c9aa75" stroke-opacity=".6"/>
+      </svg>
+      <div class="float-tag tag-top"><span class="tag-star">✦</span> THE BEAUTY OF PROPORTION</div>
+      <div class="float-tag tag-bottom"><span>◈</span> L / W = RATIO</div>
+      <span class="hero-sparkle sparkle-one">✧</span><span class="hero-sparkle sparkle-two">✦</span>
+    </div>
+  </section>
+
+  <section class="workbench-section" id="calculator" aria-labelledby="calculator-heading">
+    <div class="shell">
+      <div class="section-intro"><div><span class="section-label">01 / THE CALCULATOR</span><h2 id="calculator-heading">Measure with <em>confidence.</em></h2></div><p>Enter two measurements from a grading report or a measurement you have taken. Results update instantly.</p></div>
+      <div class="tool-grid">
+        <div class="tool-card input-card">
+          <div class="card-top"><div><span class="tiny-label">DIAMOND A</span><h3>Enter your measurements</h3></div><button class="text-button" id="reset-button" type="button" aria-label="Reset all calculator values"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 17v-6h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Reset</button></div>
+          <form id="ratio-form" novalidate>
+            <label class="field-label" for="shape">Diamond shape</label>
+            <div class="select-wrap"><select id="shape" name="shape">
+              <option value="oval">Oval</option><option value="pear">Pear</option><option value="marquise">Marquise</option><option value="emerald">Emerald</option><option value="radiant">Radiant</option><option value="cushion">Cushion</option><option value="asscher">Asscher</option><option value="princess">Princess</option><option value="round">Round</option>
+            </select><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="measurement-grid">
+              <div><label class="field-label" for="length">Length <span class="unit-hint">(mm)</span></label><div class="input-unit"><input id="length" name="length" type="number" inputmode="decimal" step="any" min="0.01" max="1000" value="9.00" autocomplete="off" required><span>mm</span></div></div>
+              <div><label class="field-label" for="width">Width <span class="unit-hint">(mm)</span></label><div class="input-unit"><input id="width" name="width" type="number" inputmode="decimal" step="any" min="0.01" max="1000" value="6.20" autocomplete="off" required><span>mm</span></div></div>
+            </div>
+            <p id="measurement-error" class="validation-message" role="alert" hidden></p>
+            <p class="input-tip"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M12 11v5m0-9v.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Generally, use the longer face-up measurement as length.</p>
+            <div class="form-divider"></div>
+            <button id="compare-toggle" class="compare-toggle" type="button" aria-expanded="false" aria-controls="compare-fields"><span class="plus-circle" aria-hidden="true">+</span><span>Compare with another diamond<span class="compare-subtitle">Add diamond B to see both ratios side by side</span></span><span class="compare-chevron" aria-hidden="true">⌄</span></button>
+            <div id="compare-fields" class="compare-fields" hidden>
+              <label class="field-label" for="compare-shape">Diamond B shape</label><div class="select-wrap"><select id="compare-shape" name="compare-shape"><option value="oval">Oval</option><option value="pear" selected>Pear</option><option value="marquise">Marquise</option><option value="emerald">Emerald</option><option value="radiant">Radiant</option><option value="cushion">Cushion</option><option value="asscher">Asscher</option><option value="princess">Princess</option><option value="round">Round</option></select><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+              <div class="measurement-grid"><div><label class="field-label" for="compare-length">Length <span class="unit-hint">(mm)</span></label><div class="input-unit"><input id="compare-length" name="compare-length" type="number" step="any" min="0.01" max="1000" inputmode="decimal" value="9.80"><span>mm</span></div></div><div><label class="field-label" for="compare-width">Width <span class="unit-hint">(mm)</span></label><div class="input-unit"><input id="compare-width" name="compare-width" type="number" step="any" min="0.01" max="1000" inputmode="decimal" value="6.20"><span>mm</span></div></div></div>
+              <p id="compare-error" class="validation-message" role="alert" hidden></p>
+            </div>
+          </form>
+          <div class="input-footer"><span class="formula-copy"><span class="formula-asterisk">✳</span> The formula is always <strong>Length ÷ Width</strong></span></div>
+        </div>
+        <div class="tool-card results-card">
+          <div class="card-top"><div><span class="tiny-label">LIVE RESULT</span><h3>Your diamond, visualised</h3></div><span class="live-pill"><span></span> LIVE</span></div>
+          <div class="visual-stage"><div class="stage-grid"></div><svg id="shape-svg" class="diamond-display" viewBox="0 0 440 330" role="img" aria-label="Schematic outline of the selected diamond shape" preserveAspectRatio="xMidYMid meet">
+            <defs><linearGradient id="stone-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffffff" stop-opacity=".96"/><stop offset="47%" stop-color="#e2f0ed" stop-opacity=".75"/><stop offset="100%" stop-color="#9dc4b8" stop-opacity=".5"/></linearGradient></defs>
+            <line x1="59" y1="18" x2="59" y2="276" class="measure-line"/><path d="m54 25 5-9 5 9m-10 243 5 9 5-9" class="arrow-path"/>
+            <line x1="100" y1="299" x2="340" y2="299" class="measure-line"/><path d="m108 294-9 5 9 5m224-10 9 5-9 5" class="arrow-path"/>
+            <g id="stone-graphic"><path id="stone-outline" fill="url(#stone-gradient)" stroke="#9b7c41" stroke-width=".018" d="M0,-1 C.6,-1 1,-.5 1,0 C1,.5 .6,1 0,1 C-.6,1 -1,.5 -1,0 C-1,-.5 -.6,-1 0,-1Z"/><path id="stone-facets" fill="none" stroke="#668f83" stroke-width=".011" stroke-opacity=".5" d="M0,-1 L-.5,0 L0,1 L.5,0 Z M-1,0 H1 M0,-1 V1"/></g>
+            <text id="length-dimension" x="31" y="167" text-anchor="middle" class="svg-dimension" transform="rotate(-90 31 167)">9.00 mm</text><text id="width-dimension" x="220" y="324" text-anchor="middle" class="svg-dimension">6.20 mm</text>
+          </svg><div class="stage-corner stage-corner-tl"></div><div class="stage-corner stage-corner-br"></div></div>
+          <div class="result-summary" aria-live="polite" aria-atomic="true"><div><span class="result-caption">LENGTH-TO-WIDTH RATIO</span><div class="big-ratio" id="ratio-result">1.45<span>:1</span></div><span id="result-shape" class="result-shape">Oval · Moderately elongated</span></div><span id="result-status" class="result-accent" aria-hidden="true">✦</span></div>
+          <p id="result-explanation" class="result-explanation">The outline is approximately 45.2% longer than it is wide. This describes the silhouette, not cut quality.</p>
+          <div class="result-actions"><button class="button button-dark" type="button" id="copy-result"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg> Copy result</button><button class="button button-outline" type="button" id="share-result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Copy share link</button></div>
+          <div class="comparison-result" id="comparison-result" hidden><div class="comparison-heading"><span class="tiny-label">SIDE-BY-SIDE COMPARISON</span><span id="comparison-delta">Difference: 0.13</span></div><div class="compare-row"><div class="compare-row-title"><strong id="stone-a-name">A · Oval</strong><span id="stone-a-ratio">1.45:1</span></div><div class="bar-track"><div id="stone-a-bar" class="bar-fill bar-a" style="width:73%"></div></div></div><div class="compare-row"><div class="compare-row-title"><strong id="stone-b-name">B · Pear</strong><span id="stone-b-ratio">1.58:1</span></div><div class="bar-track"><div id="stone-b-bar" class="bar-fill bar-b" style="width:79%"></div></div></div><p>Longer bars indicate higher length-to-width ratios, not better diamonds.</p></div>
+        </div>
+      </div>
+      <p class="tool-disclaimer"><span aria-hidden="true">ⓘ</span> Illustrations are schematic, not actual diamond scans. Measurements, outline and proportions cannot establish diamond cut quality, light performance, value or authenticity.</p>
+    </div>
+  </section>
+
+  <section class="how-section shell" id="guide" aria-labelledby="guide-heading"><div class="section-intro section-intro-guide"><div><span class="section-label">02 / UNDERSTANDING THE RESULT</span><h2 id="guide-heading">A simple number. <em>A clearer picture.</em></h2></div><p>A ratio is a proportion, not a score. Explore how the number changes the apparent outline.</p></div>
+    <div class="ratio-guide"><button type="button" class="guide-card" data-preset="asscher" data-length="6.5" data-width="6.5"><span class="guide-number">01 / NEAR EQUAL</span><span class="guide-stone guide-stone-square" aria-hidden="true"></span><strong>1.00 : 1</strong><span>Length and width are equal.</span><span class="guide-try">Try this example ↗</span></button><button type="button" class="guide-card" data-preset="cushion" data-length="7.8" data-width="6.0"><span class="guide-number">02 / GENTLE</span><span class="guide-stone guide-stone-gentle" aria-hidden="true"></span><strong>1.30 : 1</strong><span>Noticeably longer than wide.</span><span class="guide-try">Try this example ↗</span></button><button type="button" class="guide-card" data-preset="oval" data-length="9" data-width="6"><span class="guide-number">03 / ELONGATED</span><span class="guide-stone guide-stone-long" aria-hidden="true"></span><strong>1.50 : 1</strong><span>A clearly extended silhouette.</span><span class="guide-try">Try this example ↗</span></button><button type="button" class="guide-card" data-preset="marquise" data-length="12" data-width="6"><span class="guide-number">04 / SLENDER</span><span class="guide-stone guide-stone-slender" aria-hidden="true"></span><strong>2.00 : 1</strong><span>Twice as long as wide.</span><span class="guide-try">Try this example ↗</span></button></div>
+    <div class="education-grid"><div class="education-copy"><span class="section-label">03 / THE ESSENTIALS</span><h2>What the ratio <em>can — and can't —</em> tell you.</h2><p>The length-to-width ratio describes a diamond's face-up proportions. It is a useful way to discuss your preferred shape and compare outlines from grading reports.</p><p>It does <strong>not</strong> measure sparkle, symmetry, cut craftsmanship, certification, colour or clarity. Two diamonds with the same ratio may look different because of their facet patterns and other characteristics.</p><a class="inline-link" href="https://laxmijewellers.ae/" rel="noopener noreferrer" target="_blank">Learn more at Laxmi Jewellers <span aria-hidden="true">↗</span></a></div><div class="faq-card"><h3>Frequently asked questions</h3><details open><summary>How is the ratio calculated?</summary><p>Divide the face-up length by the width, using the same units for both. For example, 9.00 mm ÷ 6.00 mm = 1.50, written as 1.50:1.</p></details><details><summary>Is there one ideal ratio for each shape?</summary><p>No universal ratio suits every person or stone. Outline preference varies, and a ratio alone cannot determine beauty or optical quality.</p></details><details><summary>Does this work for lab-grown diamonds?</summary><p>Yes. The calculation depends on measurements and applies equally to natural and laboratory-grown diamonds.</p></details><details><summary>Are my measurements stored?</summary><p>No. Calculations run in your browser. The tool does not send measurement data to a server. A share link includes the measurements in its URL only if you choose to copy it.</p></details></div></div>
+  </section>
+</main>
+<footer class="site-footer"><div class="shell footer-top"><div><span class="footer-heading">LAXMI JEWELLERS <span>✦</span></span><p>Thoughtful tools for more informed jewellery choices.</p></div><a href="https://laxmijewellers.ae/" target="_blank" rel="noopener noreferrer">Explore the official website ↗</a></div><div class="shell footer-bottom"><span>© <span id="footer-year">2026</span> Laxmi Jewellers · Dubai, UAE</span><span>Laxmi Jewellers is a trade name owned and operated by Amit Verma Jewellery LLC, a company registered in the UAE.</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
