@@ -1,89 +1,96 @@
-# Diamond Shape Ratio Calculator
+# Diamond Shape Ratio Calculator – Laxmi Jewellers Dubai
 
-A free, responsive, browser-based educational calculator from **Laxmi Jewellers Dubai**.
+A free, interactive and educational **Diamond Shape Ratio Calculator** developed for Laxmi Jewellers Dubai. This browser-based tool helps jewellery enthusiasts, diamond buyers and students calculate diamond length-to-width ratios, visualise diamond proportions and compare different shapes.
 
-**Demo:** Publish with GitHub Pages using the steps below. No account, backend, database, cookies or paid services are needed for the tool.
+The calculator is designed to make diamond measurements easier to understand through clear explanations, interactive illustrations and a user-friendly interface.
 
-![Diamond Shape Ratio Calculator desktop preview](docs/desktop-preview.png)
+## Key Features
 
-## Features
+- **Instant Ratio Calculation:** Calculate diamond length-to-width ratios using measurements in millimetres.
+- **Nine Diamond Shapes:** Explore oval, pear, marquise, emerald, radiant, cushion, asscher, princess and round diamonds.
+- **Interactive Visualisation:** Understand how different measurements influence diamond proportions.
+- **Diamond Comparison:** Compare the dimensions and ratios of two diamonds side by side.
+- **Measurement Validation:** Identify missing, invalid or incorrect measurements.
+- **Shareable Results:** Copy calculated ratios and share measurement-based links.
+- **Mobile-Friendly Design:** Responsive interface for desktop, tablet and mobile devices.
+- **Privacy-Friendly:** Calculations are designed to run locally in the browser without registration or personal data collection.
 
-- Live length ÷ width calculation (2 decimal places)
-- Interactive shape illustration for **oval, pear, marquise, emerald, radiant, cushion, asscher, princess, and round**
-- Side-by-side comparison of two diamonds
-- Measurement validation and error messages
-- Copy a result or a shareable URL with the entered measurements
-- Example cards, educational explanations and FAQs
-- Responsive layout for mobile, tablet and desktop
-- Keyboard-friendly controls, reduced-motion support and semantic HTML
-- No analytics, external JavaScript, API calls or user-data uploads
+## How the Calculator Works
 
-## Run locally
+The calculator uses the following formula:
 
-Open `index.html` using a local HTTP server because the calculator uses ES modules.
+**Length-to-Width Ratio = Diamond Length ÷ Diamond Width**
 
-```bash
-python -m http.server 8000
-```
+For example:
 
-Visit `http://localhost:8000/`.
+- Diamond length: 9.00 mm
+- Diamond width: 6.00 mm
+- Calculated ratio: **1.50:1**
 
-Alternative:
+This ratio describes the relationship between a diamond's length and width, helping users understand its face-up proportions.
 
-```bash
-npx serve .
-```
+## Who Can Use This Tool?
 
-## Publish on GitHub Pages
+The calculator is suitable for:
 
-1. Create a new **public** GitHub repository, for example `diamond-shape-ratio-calculator`.
-2. Upload **all files and folders** in this project to the repository root (not just `index.html`).
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose branch **main**, folder **/(root)** and click **Save**.
-6. Once GitHub displays the public URL, open it and test the calculator.
+- Jewellery buyers exploring diamond shapes
+- Students studying gemmology
+- Jewellery designers comparing proportions
+- Diamond enthusiasts researching fancy-shaped diamonds
+- Developers interested in educational jewellery tools
 
-The resulting link normally resembles:
+## Educational Disclaimer
 
-`https://YOUR-USERNAME.github.io/diamond-shape-ratio-calculator/`
+A diamond's length-to-width ratio describes its proportions, not its overall quality. It does not determine cut grade, brilliance, symmetry, authenticity or market value.
 
-Replace `YOUR-USERNAME` with your actual GitHub username. This is an example, not a confirmed live URL.
+The visual illustrations are educational representations and should not replace professional diamond grading reports.
 
-## How the calculation works
+## Technology
 
-`length-to-width ratio = length in mm / width in mm`
+The project is designed using:
 
-Example: `9.00 / 6.00 = 1.50`, displayed as `1.50:1`.
+- HTML5
+- CSS3
+- JavaScript
+- SVG-based diamond illustrations
+- Responsive web design
 
-Use the longer face-up dimension as length. The interface flags reversed measurements instead of silently swapping them. Only outline proportions are described; the tool does **not** grade cut quality, brightness, value, authenticity or symmetry.
+The calculator is intended to work directly in a modern web browser without requiring a database or user account.
 
-## Privacy and links
+## Installation and Deployment
 
-All calculations run locally in the browser. No entries are sent to a server. The **Copy share link** action adds the entered dimensions to the URL query string, so anyone with that link can read them. It does not automatically transmit the URL.
+1. Download or clone this GitHub repository.
+2. Ensure all required application files and assets are included.
+3. Open the project using a local HTTP server.
+4. Test the calculator and its interactive functionality.
+5. Publish the completed project through GitHub Pages.
 
-The external `https://laxmijewellers.ae/` links are publisher attribution, not checkout links. Before publishing, verify all business information, brand-authorisation and product/platform policy requirements.
+### GitHub Pages Setup
 
-## Testing
+Navigate to:
 
-Requires Node.js 20+ and no additional packages:
+**Repository → Settings → Pages**
 
-```bash
-npm test
-```
+Select:
 
-Browser acceptance testing should also be performed after publishing.
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /(root)
 
-## Sources for the mathematical and educational approach
+Save the settings and open the published website once deployment is complete.
 
-- [GIA: How to Buy a Quality Diamond](https://4cs.gia.edu/en-us/blog/how-to-buy-a-quality-diamond/)
-- [GIA: Oval Cut Diamond Guide](https://4cs.gia.edu/en-us/blog/oval-cut-diamond-guide/)
+## About Laxmi Jewellers Dubai
 
-These sources inform the distinction between length-to-width ratio and overall cut grade. The app does not use arbitrary "ideal" ratios to score diamonds.
+[Laxmi Jewellers Dubai](https://laxmijewellers.ae/) is a jewellery business offering gold jewellery, lab-grown diamond jewellery, engagement rings, bridal collections and bespoke jewellery services.
 
-## Publisher
+This educational project is intended to help users better understand diamond shapes and proportions before making jewellery decisions.
+
+**Official Website:** https://laxmijewellers.ae/
+
+## Publisher Information
 
 Laxmi Jewellers is a trade name owned and operated by Amit Verma Jewellery LLC, a company registered in the UAE.
 
 ## Licence
 
-MIT. See `LICENSE`.
+This project is distributed under the MIT License. Please refer to the LICENSE file for details.
